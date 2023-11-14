@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- CSS -->
+  <style>
+    #pio:before {
+      display: block;
+      height: 50px;
+      margin-top: -50px;
+      visibility: hidden;
+      content: '';
+    }
+  </style>
+  <title>Pio Ong</title>
+</head>
+
+<body>
+  <!--  navbar  -->
+  <nav class="navbar sticky-top navbar-expand-md bg-dark navbar-dark">
+    <div class="container">
+      <a href="#pio" class="navbar-brand">Pio Ong</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#news" class="nav-link">News</a>
+          </li>
+          <li class="nav-item">
+            <a href="#research" class="nav-link">Research</a>
+          </li>
+          <li class="nav-item">
+            <a href="#publications" class="nav-link">Publications</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--  Showcase  -->
+  <section class="bg-dark text-light p-4 pt-0 text-center text-md-start" id="pio">
+    <div class="container">
+      <div class="d-md-flex align-items-center justify-content-between">
+        <div class="col-md-5 col-lg-4 col-xl-3 text-center">
+          <img class="img-fluid d-none d-md-block wm-100 p-4" src="images/Pio Ong.jpg" />
+          <img class="img-fluid d-md-none w-50 p-3" src="images/Pio Ong.jpg" />
+        </div>
+        <div class="col-md-7 col-lg-8 col-xl-9 p-1">
+          <h1>Hi, I'm <span class="text-warning">Pio Ong</span></h1>
+          <p class="lead my-2">
+            I am currently a post-doctoral researcher and a lecturer at California Institute of Technology under the
+            supervision of
+            Prof. <a href="http://ames.caltech.edu" class="link-light">Aaron Ames</a>. My current main research focus is
+            on safe intermittent control of satellites using tools like event-triggered control and control barrier
+            functions.
+            I received a Bachelor's degree in Aerospace Engineering from UCSD in
+            2012, and a Master's degree in Astronautical Engineering from USC in 2013. During Fall and Winter of 2014, I
+            worked as an intern at Space Exploration Technologies Corp (SpaceX), which has sparked my interests in
+            studying control theory. In 2022, I received my Ph.D. degree from the University
+            of California, San Diego (UCSD), and my Ph.D. advisor was Prof. <a
+              href="http://terrano.ucsd.edu/jorge/index.html" class="link-light">Jorge Cortés</a>.
+          </p>
+          <h2 class="py-3"> Email: <a href="mailto:pioong@caltech.edu">pioong@caltech.edu</a></h2>
+          <a href="CV_PO.pdf" class="btn btn-primary btn-lg">Academic CV</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="p-5" id="news" style="background-color:#b5f3f0">
+    <div class="container">
+      <h1 class="text-center mb-4">News</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div class="col">
+          <div class="card h-100 bg-primary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-journal-check mb-3"></i>
+              </div>
+              <h3 class="card-title mb-4">Journal Paper Accepted</h3>
+              <p class="card-text"> Our paper &ldquo;Nonsmooth control barrier function design of continuous
+                constraints for network connectivity maintenance&rdquo; is accepted for publication in Automatica. </p>
+              <a href="https://arxiv.org/abs/2112.05935" class="btn btn-warning">See Paper</a>
+            </div>
+            <div class="card-footer">June 2023</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 bg-success text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-briefcase-fill mb-3"></i>
+              </div>
+              <h3 class="card-title mb-3">Start Teaching</h3>
+              <p class="card-text"> My position as a lecturer at Caltech began. For the Spring quarter of 2023, I was
+                hired to teach an undergraduate course on the introduction to controls (CDS 110/ChE 105). </p>
+            </div>
+            <div class="card-footer">April 2023</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-journal-arrow-down mb-3"></i>
+              </div>
+              <h3 class="card-title mb-4">Papers Submitted</h3>
+              <p class="card-text"> We submitted two papers to CDC 2023.</p>
+              <a href="https://arxiv.org/abs/2304.08684" class="btn btn-dark">See Paper 1</a>
+              <a href="https://arxiv.org/abs/2304.08685" class="btn btn-dark">See Paper 2</a>
+            </div>
+            <div class="card-footer">March 2023</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 bg-primary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-journal-arrow-down mb-3"></i>
+              </div>
+              <h3 class="card-title mb-4">Papers Accepted</h3>
+              <p class="card-text"> Both papers we submitted to CDC 2022 get accepted.</p>
+              <a href="https://arxiv.org/abs/2204.03110" class="btn btn-warning">See Paper 1</a>
+              <a href="https://arxiv.org/abs/2204.00653" class="btn btn-warning">See Paper 2</a>
+            </div>
+            <div class="card-footer">September 2022</div>
+          </div>
+        </div>
+        <!-- <div class="col">
+          <div class="card h-100 bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-journal-arrow-down mb-3"></i>
+              </div>
+              <h3 class="card-title mb-4">Papers Submitted</h3>
+              <p class="card-text"> We submitted two papers to CDC 2022.</p>
+              <a href="https://arxiv.org/abs/2204.03110" class="btn btn-dark">See Paper 1</a>
+              <a href="https://arxiv.org/abs/2204.00653" class="btn btn-dark">See Paper 2</a>
+            </div>
+            <div class="card-footer">March 2022</div>
+          </div>
+        </div> -->
+        <div class="col">
+          <div class="card h-100 bg-success text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-briefcase-fill mb-3"></i>
+              </div>
+              <h3 class="card-title mb-3">Start Postdoc</h3>
+              <p class="card-text"> I started my post-doctoral research under the guidance of Prof. Aaron Ames at
+                Caltech. </p>
+              <a href="http://ames.caltech.edu" class="btn btn-light">Prof Ames's Website</a>
+            </div>
+            <div class="card-footer">January 2022</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 bg-warning text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-shield-fill-check mb-3"></i>
+              </div>
+              <h3 class="card-title mb-4">Defended Thesis!</h3>
+              <p class="card-text"> I successfully defended my thesis, and therefore, finished my studies at UCSD. Thank
+                you Prof. Jorge Cortes for being an awesome advisor.</p>
+            </div>
+            <div class="card-footer">December 2021</div>
+          </div>
+        </div>
+        <!-- <div class="col">
+          <div class="card h-100 bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-journal-arrow-down mb-3"></i>
+              </div>
+              <h3 class="card-title mb-4">Paper Submitted</h3>
+              <p class="card-text"> We submitted a paper &ldquo;Nonsmooth control barrier function design of continuous
+                constraints for network connectivity maintenance&rdquo; to International Journal of Robotics Research.
+              </p>
+              <a href="http://terrano.ucsd.edu/jorge/publications/jp/jp154.html" class="btn btn-dark">See Paper</a>
+            </div>
+            <div class="card-footer">December 2021</div>
+          </div>
+        </div> -->
+        <div class="col">
+          <div class="card h-100 bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-journal-arrow-down mb-3"></i>
+              </div>
+              <h3 class="card-title mb-4">Paper Submitted</h3>
+              <p class="card-text"> We submitted a paper &ldquo;Performance-barrier-based event-triggered control with
+                applications to network systems&rdquo; to Transactions on Automatic Control.</p>
+              <a href="http://terrano.ucsd.edu/jorge/publications/jp/jp152.html" class="btn btn-dark">See Paper</a>
+            </div>
+            <div class="card-footer">August 2021</div>
+          </div>
+        </div>
+        <!-- <div class="col">
+          <div class="card h-100 bg-primary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-journal-check mb-3"></i>
+              </div>
+              <h3 class="card-title mb-4">Paper Accepted</h3>
+              <p class="card-text"> Our paper &ldquo;Network Connectivity Maintenance via Nonsmooth Control
+                Barrier Functions&rdquo; is accepted to CDC 2021. Catch me at the conference!</p>
+              <a href="https://2021.ieeecdc.org/" class="btn btn-light">CDC 2021</a>
+            </div>
+            <div class="card-footer">July 2021</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 bg-secondary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-journal-arrow-down mb-3"></i>
+              </div>
+              <h3 class="card-title mb-4">Paper Submitted</h3>
+              <p class="card-text"> We submitted a paper &ldquo;Network Connectivity Maintenance via Nonsmooth Control
+                Barrier Functions&rdquo; to CDC 2021.</p>
+              <a href="http://terrano.ucsd.edu/jorge/publications/cp/cp161.html" class="btn btn-dark">See Abstract</a>
+            </div>
+            <div class="card-footer">March 2021</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 bg-primary text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-journal-text mb-3"></i>
+              </div>
+              <h3 class="card-title mb-3">Paper Published</h3>
+              <p class="card-text"> Our paper &ldquo;Opportunistic robot control for interactive multiobjective
+                optimization under human
+                performance limitations&rdquo; is published in Automatica! </p>
+              <a href="http://terrano.ucsd.edu/jorge/publications/data/2019_OnCo-auto.pdf" class="btn btn-light">See
+                Paper</a>
+            </div>
+            <div class="card-footer">December 2020</div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Accordian -->
+  <section class="pt-5 pb-5 text-light" style="background-color:#2b7a78" id="research">
+    <div class="container">
+      <h1 class="text-center mb-4">Research Interests</h1>
+      <div class="accordion accordion-flush text-dark" id="topics">
+        <div class="accordion-item" style="background-color:#def2f1">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" style="background-color:#3aafa9" type="button"
+              data-bs-toggle="collapse" data-bs-target="#ETC-collapse">
+              Event-triggered control
+            </button>
+          </h2>
+          <div id="ETC-collapse" class="accordion-collapse collapse" data-bs-parent="#topics">
+            <div class="accordion-body">
+              <div class="col">
+                <p>Event-triggered control (ETC) is a tool for accomplishing control tasks while conserving resource
+                  usages. Our research involves pushing the boundary on the efficiency of ETC, and at the same time,
+                  tying in performance criteria to the trigger design. In addition, we tackle unsolved problems in the
+                  area, such as Zeno-free distributed trigger design, and interesting applications of ETC, such as
+                  human-robot interaction.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" style="background-color:#def2f1">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" style="background-color:#3aafa9" type="button"
+              data-bs-toggle="collapse" data-bs-target="#CBF-Collapse">
+              Control barrier functions
+            </button>
+          </h2>
+          <div id="CBF-Collapse" class="accordion-collapse collapse" data-bs-parent="#topics">
+            <div class="accordion-body">
+              <div class="col">
+                <p>Control barrier functions (CBFs) are employed to address safety concerns, i.e., the possibilities of
+                  system trajectory to evolve to undesirable states. Our research focuses on the implementation issues
+                  of a CBF-based feedback controller. This includes both smoothness (or continuity) property and
+                  resource usage of the controller. One interesting application of CBF we study is connectivity
+                  maintenance of a multi-robot system. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" style="background-color:#def2f1">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" style="background-color:#3aafa9" type="button"
+              data-bs-toggle="collapse" data-bs-target="#dist-collapse">
+              Distributed implementations
+            </button>
+          </h2>
+          <div id="dist-collapse" class="accordion-collapse collapse" data-bs-parent="#topics">
+            <div class="accordion-body">
+              <div class="col">
+                <p>Our research explores the excitiing possibilities of applying novel techniques, e.g., event-triggered
+                  control and control barrier functions, to network systems in a distributed way. We use tools like
+                  graph theory and dynamic average consensus to help with analyses. Applications we look at include
+                  multi-robot systems and power systems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item" style="background-color:#def2f1">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" style="background-color:#3aafa9" type="button"
+              data-bs-toggle="collapse" data-bs-target="#smooth-collapse">
+              Smoothness properties
+            </button>
+          </h2>
+          <div id="smooth-collapse" class="accordion-collapse collapse" data-bs-parent="#topics">
+            <div class="accordion-body">
+              <div class="col">
+                <p>Smoothness property is a desirable trait for real-world applications. Particularly, following
+                  Sontag's
+                  famous universal formula, we develop our own version of such formula that also takes into account
+                  safety
+                  criterion from a control barrier function, in addition to the Lyapunov's condition for stability.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Publications -->
+  <section class="pt-5 pb-5 bg-light" id="publications">
+    <div class="container">
+      <h1 class="text-center mb-4">Publications</h1>
+      <div>
+        <h2 class="mb-3">Journal Papers</h2>
+        <ol reversed>
+          <li class="mb-2"> <b>P. Ong</b>, B. Capelli, L. Sabattini, J. Cortés. <a
+              href="http://terrano.ucsd.edu/jorge/publications/jp/jp154.html">Nonsmooth control barrier function design
+              of continuous constraints for network connectivity maintenance</a> <br /> <i>Automatica</i>, to appear
+            <br />
+          </li>
+          <li class="mb-2"> <b>P. Ong</b>, J. Cortés <a
+              href="http://terrano.ucsd.edu/jorge/publications/jp/jp152.html">Performance-barrier-based
+              event-triggered control with applications to network
+              systems</a> <br /> <i>IEEE Transactions on Automatic Control</i>, submitted <br />
+          </li>
+          <li class="mb-2">A. J. Taylor, <b>P. Ong</b>, J. Cortés, A. D. Ames. <a
+              href="http://terrano.ucsd.edu/jorge/publications/jp/jp133.html">Safety-critical event triggered control
+              via input-to-state safe barrier functions</a> <br /> <i>IEEE Control Systems Letters</i> 5 (3) (2021),
+            749-754
+            <br /> (First two authors contributed equally to the paper) <br />
+          </li>
+          <li class="mb-2"><b>P. Ong</b> and J. Cortés. <a
+              href="http://terrano.ucsd.edu/jorge/publications/jp/jp124.html">Opportunistic robot control for
+              interactive multiobjective optimization under human performance limitations</a> <br /> <i>Automatica</i>
+            123(2021), 109263 <br />
+          </li>
+        </ol>
+        <h2 class="mb-3">Conference Papers</h2>
+        <ol reversed>
+          <li class="mb-2"><b>P. Ong</b>, A. D. Ames. <a href="https://arxiv.org/abs/2304.08684">&ldquo;Intermittent
+              Safety Filters for Event-Triggered Safety Maneuvers with Application to Satellite Orbit
+              Transfers&rdquo;</a> <br />
+            Proceedings of the <i>IEEE Conference on Decision and Control</i>, Marina Bay Sands, Singapore, submitted
+            <br />
+          </li>
+          <li class="mb-2">G. Bahati, <b>P. Ong</b>, A. D. Ames. <a
+              href="https://arxiv.org/abs/2304.08685">&ldquo;Violation-Free Inter-Sampling Safety: from Control Barrier
+              Functions to Tunable Controllers with Input-to-State Safety Guarantees&rdquo;</a> <br />
+            Proceedings of the <i>IEEE Conference on Decision and Control</i>, Marina Bay Sands, Singapore, submitted
+            <br />
+          </li>
+          <li class="mb-2"><b>P. Ong</b>, G. Bahati, A. D. Ames. <a
+              href="https://arxiv.org/abs/2204.03110">&ldquo;Stability and safety through
+              event-triggered intermittent control with application to spacecraft orbit stabilization&rdquo;</a> <br />
+            Proceedings of the <i>IEEE Conference on Decision and Control</i>,
+            Cancun, Mexico, 2022, pp. 453-460 <br />
+          </li>
+          <li class="mb-2">A. J. Taylor, <b>P. Ong</b>, T. G. Molnar, A. D. Ames. <a
+              href="https://arxiv.org/abs/2204.00653">&ldquo;Safe backstepping with control
+              barrier functions&rdquo;</a> <br /> Proceedings of the <i>IEEE Conference on Decision and Control</i>,
+            Cancun, Mexico, 2022, pp. 5775-5782 <br />
+          </li>
+          <li class="mb-2"><b>P. Ong</b>, B. Capelli, L. Sabattini, J. Cortés. <a
+              href="http://terrano.ucsd.edu/jorge/publications/cp/cp161.html">&ldquo;Network connectivity maintenance
+              via nonsmooth control barrier functions&rdquo;</a> <br /> Proceedings of the <i>IEEE Conference on
+              Decision and Control</i>,
+            Austin, Texas, 2021, pp. 4780-4785
+            <br /> (First two authors contributed equally to the paper) <br />
+          </li>
+          <li class="mb-2">A. J. Taylor, <b>P. Ong</b>, J. Cortés, A. D. Ames. <a
+              href="http://terrano.ucsd.edu/jorge/publications/cp/cp152.html">&ldquo;Safety-critical event triggered
+              control via input-to-state safe barrier functions&rdquo;</a> <br /> Proceedings of the <i>IEEE Conference
+              on Decision and
+              Control</i>, Jeju Island, South Korea, 2020 <br /> (First two authors contributed equally to the paper)
+            <br />
+          </li>
+          <li class="mb-2"><b>P. Ong</b> and J. Cortés. <a
+              href="http://terrano.ucsd.edu/jorge/publications/cp/cp145.html">&ldquo;Universal formula for smooth safe
+              stabilization&rdquo;</a> <br /> Proceedings of the <i>IEEE Conference on Decision and Control</i>, Nice,
+            France,
+            2019, pp. 2373-2378 <br />
+          </li>
+          <li class="mb-2"><b>P. Ong</b> and J. Cortés. <a
+              href="http://terrano.ucsd.edu/jorge/publications/cp/cp135.html">&ldquo;Event-triggered control design
+              with performance barrier&rdquo;</a> <br /> Proceedings of the <i>IEEE Conference on Decision and
+              Control</i>,
+            Miami Beach, Florida, 2018, pp. 951-956 <br />
+          </li>
+          <li class="mb-2"><b>P. Ong</b> and J. Cortés. <a
+              href="http://terrano.ucsd.edu/jorge/publications/cp/cp117.html">&ldquo;Event-triggered interactive
+              gradient descent for real-time multi-objective optimization&rdquo;</a> <br /> Proceedings of the <i>IEEE
+              Conference on Decision and Control</i>, Melbourne, Australia, 2017, pp. 5445-5450
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
