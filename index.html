@@ -20,6 +20,31 @@
       visibility: hidden;
       content: '';
     }
+
+    .bg-featured {
+      background: linear-gradient(135deg, #6a11cb, #2575fc); /* deep blue-purple gradient */
+      color: white;
+    }
+
+    .bg-travel {
+      background: linear-gradient(135deg, #56CCF2, #2F80ED);
+      color: white;
+    }
+
+    .bg-submitted {
+      background: linear-gradient(135deg, #485563, #29323c);
+      color: white;
+    }
+
+    .bg-journal-accepted {
+      background: linear-gradient(135deg, #f7971e, #ffd200);
+      color: #1a1a1a;
+    }
+
+    .bg-conf-accepted {
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      color: white;
+    }
   </style>
   <title>Pio Ong</title>
 </head>
@@ -89,7 +114,7 @@
       <!-- News Cards -->
       <div id="news-archive" class="d-none">
         <div class="col">
-          <div class="card h-100 bg-primary text-light">
+          <div class="card h-100 bg-conf-accepted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-check mb-3"></i>
@@ -103,10 +128,10 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-info text-light">
+          <div class="card h-100 bg-travel text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <i class="bi bi-people mb-3"></i>
+                <img src="images/acc-2025-logo.png" alt="ACC 2025 logo" style="height:64px;">
               </div>
               <h3 class="card-title mb-4">Conference Travel</h3>
               <p class="card-text"> I will be in Denver, Colorado to attend and present at the American Control Conference (ACC) 2025.</p>
@@ -117,7 +142,24 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-primary text-light">
+          <div class="card h-100 bg-featured text-light">
+            <div class="card-body text-center">
+              <!-- <div class="h1 mb-3">
+                <i class="bi bi-people mb-3"></i>
+              </div> -->
+              <div class="h1 mb-3">
+                <img src="images/nextcom-logo-transparent.png" alt="NEXTCOM logo" style="height:64px;">
+              </div>
+              <h3 class="card-title mb-4">NEXTCOM Feature</h3>
+              <p class="card-text"> NEXTCOM featured me in their Meet-the-Leaders series on LinkedIn! I'm honored to be recognized as part of the next generation of researchers in the control community.</p>
+              <a href="https://www.linkedin.com/posts/nextcom-by-css_nextcom-meettheleaders-controltheory-activity-7335696782833672192-Fifd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA0DVrQBmLI2d1yh1IJyFTa2sRLA3z2KIuM" class="btn btn-dark">View LinkedIn Post</a>
+            </div>
+            <div class="card-footer">June 2025</div>
+          </div>
+        </div>  
+
+        <div class="col">
+          <div class="card h-100 bg-conf-accepted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-check mb-3"></i>
@@ -131,7 +173,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-info text-light">
+          <div class="card h-100 bg-travel text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-people mb-3"></i>
@@ -145,7 +187,7 @@
         </div>
         
         <div class="col">
-          <div class="card h-100 bg-secondary text-light">
+          <div class="card h-100 bg-submitted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-arrow-down mb-3"></i>
@@ -159,7 +201,7 @@
         </div>
                 
         <div class="col">
-          <div class="card h-100 bg-secondary text-light">
+          <div class="card h-100 bg-submitted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-arrow-down mb-3"></i>
@@ -173,7 +215,21 @@
         </div>
         
         <div class="col">
-          <div class="card h-100 bg-primary text-light">
+          <div class="card h-100 bg-featured text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <img src="images/nextcom-logo-transparent.png" alt="NEXTCOM logo" style="height:64px;">
+              </div>
+              <h3 class="card-title mb-4">Joined NEXTCOM Leadership</h3>
+              <p class="card-text"> I joined the leadership team of NEXTCOM as a CDC Ambassador. NEXTCOM is an initiative by the IEEE Control Systems Society to support and connect young professionals in control, empowering them to become the next generation of established researchers and engineers.</p>
+              <a href="https://sites.google.com/view/css-nextcom" class="btn btn-dark">Visit NEXTCOM</a>
+            </div>
+            <div class="card-footer">January 2025</div>
+          </div>
+        </div>  
+
+        <div class="col">
+          <div class="card h-100 bg-conf-accepted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-check mb-3"></i>
@@ -187,7 +243,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-info text-light">
+          <div class="card h-100 bg-travel text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-people mb-3"></i>
@@ -201,7 +257,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-info text-light">
+          <div class="card h-100 bg-travel text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-people mb-3"></i>
@@ -216,7 +272,7 @@
 
         
         <div class="col">
-          <div class="card h-100 bg-secondary text-light">
+          <div class="card h-100 bg-submitted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-arrow-down mb-3"></i>
@@ -230,7 +286,7 @@
         </div>
         
         <div class="col">
-          <div class="card h-100 bg-primary text-light">
+          <div class="card h-100 bg-conf-accepted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-check mb-3"></i>
@@ -244,7 +300,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-info text-light">
+          <div class="card h-100 bg-travel text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-people mb-3"></i>
@@ -258,7 +314,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-secondary text-light">
+          <div class="card h-100 bg-submitted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-arrow-down mb-3"></i>
@@ -272,7 +328,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-primary text-light">
+          <div class="card h-100 bg-conf-accepted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-check mb-3"></i>
@@ -287,7 +343,7 @@
 
 
         <div class="col">
-          <div class="card h-100 bg-primary text-light">
+          <div class="card h-100 bg-journal-accepted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-check mb-3"></i>
@@ -302,7 +358,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-primary text-light">
+          <div class="card h-100 bg-journal-accepted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-check mb-3"></i>
@@ -317,7 +373,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-secondary text-light">
+          <div class="card h-100 bg-submitted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-arrow-down mb-3"></i>
@@ -332,7 +388,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-primary text-light">
+          <div class="card h-100 bg-conf-accepted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-check mb-3"></i>
@@ -348,7 +404,7 @@
         </div>
 
         <div class="col">
-          <div class="card h-100 bg-primary text-light">
+          <div class="card h-100 bg-journal-accepted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <i class="bi bi-journal-check mb-3"></i>
