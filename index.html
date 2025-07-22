@@ -21,8 +21,10 @@
       content: '';
     }
 
+    /* News Cards Style*/
     .bg-featured {
-      background: linear-gradient(135deg, #6a11cb, #2575fc); /* deep blue-purple gradient */
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      /* deep blue-purple gradient */
       color: white;
     }
 
@@ -50,6 +52,48 @@
       background: linear-gradient(135deg, #3a7734, #a0d468);
       /* background: linear-gradient(135deg, #56ab2f, #a8e063);  */
       color: #ffffff;
+    }
+
+    #research {
+      background: linear-gradient(135deg, #2c3e50, #4ca1af);
+      color: #f5f5f5;
+    }
+
+    /* Accordion container appearance */
+    .accordion-item {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      color: #f5f5f5;
+    }
+
+    /* Accordion header button (collapsed) */
+    .accordion-button {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #f8f9fa;
+      font-weight: 600;
+      border: none;
+      box-shadow: none;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Accordion arrow color fix */
+    .accordion-button::after {
+      filter: invert(0.9);
+    }
+
+    /* Accordion header when expanded */
+    .accordion-button:not(.collapsed) {
+      background-color: #34495e;
+      color: #ffd700;
+      /* Gold accent text */
+    }
+
+    /* Accordion body content */
+    .accordion-body {
+      color: #e0e0e0;
+      padding: 1rem 1.25rem;
     }
   </style>
   <title>Pio Ong</title>
@@ -123,11 +167,13 @@
           <div class="card h-100 bg-conf-accepted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <img src="images/cdc-2025-logo.png" alt="CDC 2025 logo" style="height:64px; max-width:100%; object-fit: contain;">
+                <img src="images/cdc-2025-logo.png" alt="CDC 2025 logo"
+                  style="height:64px; max-width:100%; object-fit: contain;">
               </div>
               <h3 class="card-title mb-4">Papers Accepted</h3>
-              <p class="card-text"> Two papers were accepted to the IEEE Conference on Decision and Control (CDC) 2025.</p>
-              <a href="https://arxiv.org/abs/2505.06842" class="btn btn-light">See Paper 1</a> 
+              <p class="card-text"> Two papers were accepted to the IEEE Conference on Decision and Control (CDC) 2025.
+              </p>
+              <a href="https://arxiv.org/abs/2505.06842" class="btn btn-light">See Paper 1</a>
               <a href="https://arxiv.org/abs/2507.12717" class="btn btn-light">See Paper 2</a>
             </div>
             <div class="card-footer">July 2025</div>
@@ -138,11 +184,13 @@
           <div class="card h-100 bg-travel text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <img src="images/acc-2025-logo.png" alt="ACC 2025 logo" style="height:64px; max-width:100%; object-fit: contain;">
+                <img src="images/acc-2025-logo.png" alt="ACC 2025 logo"
+                  style="height:64px; max-width:100%; object-fit: contain;">
               </div>
               <h3 class="card-title mb-4">Conference Travel</h3>
-              <p class="card-text"> I will be in Denver, Colorado to attend and present at the American Control Conference (ACC) 2025.</p>
-              
+              <p class="card-text"> I will be in Denver, Colorado to attend and present at the American Control
+                Conference (ACC) 2025.</p>
+
             </div>
             <div class="card-footer">July 2025</div>
           </div>
@@ -152,24 +200,29 @@
           <div class="card h-100 bg-featured text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <img src="images/nextcom-logo-transparent.png" alt="NEXTCOM logo" style="height:64px; max-width:100%; object-fit: contain;">
+                <img src="images/nextcom-logo-transparent.png" alt="NEXTCOM logo"
+                  style="height:64px; max-width:100%; object-fit: contain;">
               </div>
               <h3 class="card-title mb-4">NEXTCOM Feature</h3>
-              <p class="card-text"> NEXTCOM featured me in their Meet-the-Leaders series on LinkedIn! I'm honored to be recognized as part of the next generation of researchers in the control community.</p>
-              <a href="https://www.linkedin.com/posts/nextcom-by-css_nextcom-meettheleaders-controltheory-activity-7335696782833672192-Fifd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA0DVrQBmLI2d1yh1IJyFTa2sRLA3z2KIuM" class="btn btn-dark">View LinkedIn Post</a>
+              <p class="card-text"> NEXTCOM featured me in their Meet-the-Leaders series on LinkedIn! I'm honored to be
+                recognized as part of the next generation of researchers in the control community.</p>
+              <a href="https://www.linkedin.com/posts/nextcom-by-css_nextcom-meettheleaders-controltheory-activity-7335696782833672192-Fifd?utm_source=share&utm_medium=member_desktop&rcm=ACoAAA0DVrQBmLI2d1yh1IJyFTa2sRLA3z2KIuM"
+                class="btn btn-dark">View LinkedIn Post</a>
             </div>
             <div class="card-footer">June 2025</div>
           </div>
-        </div>  
+        </div>
 
         <div class="col">
           <div class="card h-100 bg-conf-accepted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <img src="images/iros-2025-logo.png" alt="IROS 2025 logo" style="height:64px; max-width:100%; object-fit: contain;">
+                <img src="images/iros-2025-logo.png" alt="IROS 2025 logo"
+                  style="height:64px; max-width:100%; object-fit: contain;">
               </div>
               <h3 class="card-title mb-4">Paper Accepted</h3>
-              <p class="card-text"> The paper was accepted to the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2025.</p>
+              <p class="card-text"> The paper was accepted to the IEEE/RSJ International Conference on Intelligent
+                Robots and Systems (IROS) 2025.</p>
               <a href="https://arxiv.org/abs/2505.06845" class="btn btn-light">See Paper</a>
             </div>
             <div class="card-footer">June 2025</div>
@@ -180,16 +233,18 @@
           <div class="card h-100 bg-travel text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <img src="images/ICRA-2025-logo-transparent.png" alt="ICRA 2025 logo" style="height:64px; max-width:100%; object-fit: contain;">
+                <img src="images/ICRA-2025-logo-transparent.png" alt="ICRA 2025 logo"
+                  style="height:64px; max-width:100%; object-fit: contain;">
               </div>
               <h3 class="card-title mb-4">Conference Travel</h3>
-              <p class="card-text"> I will be in Atlanta, Georgia for ICRA 2025, where I am co-organizing the ICRA Workshop on Robot Safety under Uncertainty from “Intangible” Specifications.</p>
+              <p class="card-text"> I will be in Atlanta, Georgia for ICRA 2025, where I am co-organizing the ICRA
+                Workshop on Robot Safety under Uncertainty from “Intangible” Specifications.</p>
               <a href="https://iscicra25.github.io/" class="btn btn-dark">Visit Workshop Site</a>
             </div>
             <div class="card-footer">May 2025</div>
           </div>
         </div>
-        
+
         <div class="col">
           <div class="card h-100 bg-submitted text-light">
             <div class="card-body text-center">
@@ -197,14 +252,15 @@
                 <i class="bi bi-journal-arrow-down mb-3"></i>
               </div>
               <h3 class="card-title mb-4">Papers Submitted</h3>
-              <p class="card-text"> We submitted two papers to the IEEE Conference on Decision and Control (CDC) 2025.</p>
-              <a href="https://arxiv.org/abs/2505.06842" class="btn btn-light">See Paper 1</a> 
+              <p class="card-text"> We submitted two papers to the IEEE Conference on Decision and Control (CDC) 2025.
+              </p>
+              <a href="https://arxiv.org/abs/2505.06842" class="btn btn-light">See Paper 1</a>
               <a href="https://arxiv.org/abs/2507.12717" class="btn btn-light">See Paper 2</a>
             </div>
             <div class="card-footer">March 2025</div>
           </div>
         </div>
-                
+
         <div class="col">
           <div class="card h-100 bg-submitted text-light">
             <div class="card-body text-center">
@@ -212,36 +268,41 @@
                 <i class="bi bi-journal-arrow-down mb-3"></i>
               </div>
               <h3 class="card-title mb-4">Paper Submitted</h3>
-              <p class="card-text"> We submitted a paper to the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) 2025.</p>
+              <p class="card-text"> We submitted a paper to the IEEE/RSJ International Conference on Intelligent Robots
+                and Systems (IROS) 2025.</p>
               <a href="https://arxiv.org/abs/2505.06845" class="btn btn-light">See Paper</a>
             </div>
             <div class="card-footer">March 2025</div>
           </div>
         </div>
-        
+
         <div class="col">
           <div class="card h-100 bg-featured text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <img src="images/nextcom-logo-transparent.png" alt="NEXTCOM logo" style="height:64px; max-width:100%; object-fit: contain;">
+                <img src="images/nextcom-logo-transparent.png" alt="NEXTCOM logo"
+                  style="height:64px; max-width:100%; object-fit: contain;">
               </div>
               <h3 class="card-title mb-4">Joined NEXTCOM Leadership</h3>
-              <p class="card-text"> I joined the leadership team of NEXTCOM as a CDC Ambassador. NEXTCOM is an initiative by the IEEE Control Systems Society to support and connect young professionals in control, empowering them to become the next generation of established researchers and engineers.</p>
+              <p class="card-text"> I joined the leadership team of NEXTCOM as a CDC Ambassador. NEXTCOM is an
+                initiative by the IEEE Control Systems Society to support and connect young professionals in control,
+                empowering them to become the next generation of established researchers and engineers.</p>
               <a href="https://sites.google.com/view/css-nextcom" class="btn btn-dark">Visit NEXTCOM</a>
             </div>
             <div class="card-footer">January 2025</div>
           </div>
-        </div>  
+        </div>
 
         <div class="col">
           <div class="card h-100 bg-conf-accepted text-light">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <img src="images/acc-2025-logo.png" alt="ACC 2025 logo" style="height:64px; max-width:100%; object-fit: contain;">
+                <img src="images/acc-2025-logo.png" alt="ACC 2025 logo"
+                  style="height:64px; max-width:100%; object-fit: contain;">
               </div>
               <h3 class="card-title mb-4">Papers Accepted</h3>
               <p class="card-text"> Two papers were accepted to the American Control Conference (ACC) 2025.</p>
-              <a href="https://arxiv.org/abs/2502.20718" class="btn btn-light">See Paper 1</a> 
+              <a href="https://arxiv.org/abs/2502.20718" class="btn btn-light">See Paper 1</a>
               <a href="https://arxiv.org/abs/2412.03708" class="btn btn-light">See Paper 2</a>
             </div>
             <div class="card-footer">January 2025</div>
@@ -255,8 +316,9 @@
                 <i class="bi bi-people mb-3"></i>
               </div>
               <h3 class="card-title mb-4">Conference Travel</h3>
-              <p class="card-text"> I will be in Milan, Italy to attend and present at the IEEE Conference on Decision and Control (CDC) 2024.</p>
-              
+              <p class="card-text"> I will be in Milan, Italy to attend and present at the IEEE Conference on Decision
+                and Control (CDC) 2024.</p>
+
             </div>
             <div class="card-footer">December 2024</div>
           </div>
@@ -269,14 +331,15 @@
                 <i class="bi bi-people mb-3"></i>
               </div>
               <h3 class="card-title mb-4">Workshop Travel</h3>
-              <p class="card-text"> I will be in Abu Dhabi, UAE to participate in the GENZERO Workshop, organized by the Technology Innovation Institute (TII).</p>
-              
+              <p class="card-text"> I will be in Abu Dhabi, UAE to participate in the GENZERO Workshop, organized by the
+                Technology Innovation Institute (TII).</p>
+
             </div>
             <div class="card-footer">November 2024</div>
           </div>
         </div>
 
-        
+
         <div class="col">
           <div class="card h-100 bg-submitted text-light">
             <div class="card-body text-center">
@@ -285,13 +348,13 @@
               </div>
               <h3 class="card-title mb-4">Papers Submitted</h3>
               <p class="card-text"> We submitted two papers to the American Control Conference (ACC) 2025.</p>
-              <a href="https://arxiv.org/abs/2502.20718" class="btn btn-light">See Paper 1</a> 
+              <a href="https://arxiv.org/abs/2502.20718" class="btn btn-light">See Paper 1</a>
               <a href="https://arxiv.org/abs/2412.03708" class="btn btn-light">See Paper 2</a>
             </div>
             <div class="card-footer">September 2024</div>
           </div>
         </div>
-        
+
         <div class="col">
           <div class="card h-100 bg-conf-accepted text-light">
             <div class="card-body text-center">
@@ -299,8 +362,9 @@
                 <i class="bi bi-journal-check mb-3"></i>
               </div>
               <h3 class="card-title mb-4">Papers Accepted</h3>
-              <p class="card-text"> Two papers were accepted to the IEEE Conference on Decision and Control (CDC) 2024.</p>
-              <a href="https://arxiv.org/abs/2409.09812" class="btn btn-light">See Paper 1</a> 
+              <p class="card-text"> Two papers were accepted to the IEEE Conference on Decision and Control (CDC) 2024.
+              </p>
+              <a href="https://arxiv.org/abs/2409.09812" class="btn btn-light">See Paper 1</a>
               <a href="https://arxiv.org/abs/2409.08413" class="btn btn-light">See Paper 2</a>
             </div>
             <div class="card-footer">July 2024</div>
@@ -314,8 +378,9 @@
                 <i class="bi bi-people mb-3"></i>
               </div>
               <h3 class="card-title mb-4">Conference Travel</h3>
-              <p class="card-text"> I will be in Toronto, Canada to attend and present at the American Control Conference (ACC) 2024.</p>
-              
+              <p class="card-text"> I will be in Toronto, Canada to attend and present at the American Control
+                Conference (ACC) 2024.</p>
+
             </div>
             <div class="card-footer">July 2024</div>
           </div>
@@ -328,8 +393,9 @@
                 <i class="bi bi-journal-arrow-down mb-3"></i>
               </div>
               <h3 class="card-title mb-4">Papers Submitted</h3>
-              <p class="card-text"> We submitted two papers to the IEEE Conference on Decision and Control (CDC) 2024.</p>
-              <a href="https://arxiv.org/abs/2409.09812" class="btn btn-light">See Paper 1</a> 
+              <p class="card-text"> We submitted two papers to the IEEE Conference on Decision and Control (CDC) 2024.
+              </p>
+              <a href="https://arxiv.org/abs/2409.09812" class="btn btn-light">See Paper 1</a>
               <a href="https://arxiv.org/abs/2409.08413" class="btn btn-light">See Paper 2</a>
             </div>
             <div class="card-footer">March 2024</div>
@@ -344,7 +410,7 @@
               </div>
               <h3 class="card-title mb-4">Papers Accepted</h3>
               <p class="card-text"> Two papers were accepted to the American Control Conference (ACC) 2024.</p>
-              <a href="https://arxiv.org/abs/2502.20718" class="btn btn-light">See Paper 1</a> 
+              <a href="https://arxiv.org/abs/2502.20718" class="btn btn-light">See Paper 1</a>
               <a href="https://arxiv.org/abs/2412.03708" class="btn btn-light">See Paper 2</a>
             </div>
             <div class="card-footer">January 2024</div>
@@ -417,7 +483,8 @@
           <div class="card h-100 bg-journal-accepted text-dark">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <img src="images/automatica.jpg" alt="automatica cover" style="height:64px; max-width:100%; object-fit: contain;">
+                <img src="images/automatica.jpg" alt="automatica cover"
+                  style="height:64px; max-width:100%; object-fit: contain;">
               </div>
               <h3 class="card-title mb-4">Journal Paper Accepted</h3>
               <p class="card-text"> Our paper &ldquo;Nonsmooth control barrier function design of continuous
@@ -572,7 +639,8 @@
           <div class="card h-100 bg-journal-accepted text-dark">
             <div class="card-body text-center">
               <div class="h1 mb-3">
-                <img src="images/automatica.jpg" alt="auto cover" style="height:64px; max-width:100%; object-fit: contain;">
+                <img src="images/automatica.jpg" alt="auto cover"
+                  style="height:64px; max-width:100%; object-fit: contain;">
               </div>
               <h3 class="card-title mb-3">Paper Published</h3>
               <p class="card-text"> Our paper &ldquo;Opportunistic robot control for interactive multiobjective
@@ -594,10 +662,22 @@
   </section>
 
   <!-- Research Accordian -->
-  <section class="pt-5 pb-5 text-light" style="background-color:#2b7a78" id="research">
+  <section class="pt-5 pb-5 text-light" id="research">
     <div class="container">
       <h1 class="text-center mb-4">Research Interests</h1>
-      <p>My broad research theme is resource conservation in control systems. For the control of dynamical systems, we
+      <p>
+        Our research addresses three critical aspects of autonomous systems: <strong>safety</strong>, <strong>resource
+          efficiency</strong>, and <strong>resiliency</strong>. These considerations are increasingly important as
+        autonomous systems operate in complex, uncertain, and resource-constrained environments. We develop
+        control-theoretic methods that provide formal guarantees of correct system behavior — ensuring safety through
+        control barrier functions, reducing control and sensing demands through resource-aware strategies like
+        event-triggered control, and maintaining reliable operation in the face of sensor failures or malicious attacks.
+        While our methods are broadly applicable across domains, we are particularly interested in applications to
+        aerospace and robotic systems, where autonomy under constraints is both challenging and essential. As the field
+        increasingly embraces machine learning for performance, our work reinforces the enduring role of <strong>control
+          theory</strong> in enabling autonomy that is verifiable and trustworthy.
+      </p>
+      <!-- <p>My broad research theme is resource conservation in control systems. For the control of dynamical systems, we
         use various resources to accomplish our performance goals, e.g., convergence rate in asymptotic stability and
         safety level in obstacle avoidance, with some diminishing return. These control resources can include, but are
         not limited to, actuation, estimation, computation, communication, and even human supervision. My research
@@ -607,12 +687,31 @@
         to make real-time decisions on resource utilization, with the goal of reducing the overall usage while
         maintaining a desired level of system performance. My research will provide general sustainability solutions for
         the control of dynamical systems with direct applications to resource-constrained systems. My research topics
-        include: </p>
+        include: </p> -->
       <div class="accordion accordion-flush text-dark" id="topics">
-        <div class="accordion-item" style="background-color:#def2f1">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#CBF-Collapse">
+              Control barrier functions
+            </button>
+          </h2>
+          <div id="CBF-Collapse" class="accordion-collapse collapse" data-bs-parent="#topics">
+            <div class="accordion-body">
+              <div class="col">
+                <p>Control barrier functions (CBFs) are employed to address safety concerns, i.e., the possibilities of
+                  system trajectory to evolve to undesirable states. Our research focuses on the implementation issues
+                  of a CBF-based feedback controller. This includes both smoothness (or continuity) property and
+                  resource usage of the controller. Interesting applications of CBF we study include connectivity
+                  maintenance of a multi-robot system and safety and coordination of space systems. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" style="background-color:#3aafa9" type="button"
-              data-bs-toggle="collapse" data-bs-target="#ETC-collapse">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#ETC-collapse">
               Event-triggered control
             </button>
           </h2>
@@ -629,29 +728,37 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item" style="background-color:#def2f1">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" style="background-color:#3aafa9" type="button"
-              data-bs-toggle="collapse" data-bs-target="#CBF-Collapse">
-              Control barrier functions
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#resilient-collapse">
+              Resilient Control and Fault Tolerance
             </button>
           </h2>
-          <div id="CBF-Collapse" class="accordion-collapse collapse" data-bs-parent="#topics">
+          <div id="resilient-collapse" class="accordion-collapse collapse" data-bs-parent="#topics">
             <div class="accordion-body">
               <div class="col">
-                <p>Control barrier functions (CBFs) are employed to address safety concerns, i.e., the possibilities of
-                  system trajectory to evolve to undesirable states. Our research focuses on the implementation issues
-                  of a CBF-based feedback controller. This includes both smoothness (or continuity) property and
-                  resource usage of the controller. Interesting applications of CBF we study include connectivity
-                  maintenance of a multi-robot system and safety and coordination of space systems. </p>
+                <p>As autonomous systems are increasingly deployed in uncertain, adversarial, or failure-prone
+                  environments, ensuring <strong>resilience</strong> — the ability to maintain safety despite component
+                  faults or malicious attacks — is crucial. For example, rather than using all available sensors to
+                  maximize state estimation performance, one line of our work investigates fault tolerance that is
+                  sufficient for safe operation under noise, failures, or sensor spoofing attacks. This work departs
+                  from
+                  traditional performance-centric paradigms and instead prioritizes <strong>formal safety
+                    guarantees</strong>, ensuring that the system behaves correctly even under uncertainty or
+                  partial observability. We have developed the <em>secured safety filter</em> to address sensor
+                  anomalies,
+                  and we look forward to developing a broader <strong>fault-tolerant safety framework</strong> using
+                  control barrier functions.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="accordion-item" style="background-color:#def2f1">
+        <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" style="background-color:#3aafa9" type="button"
-              data-bs-toggle="collapse" data-bs-target="#dist-collapse">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#dist-collapse">
               Distributed implementations
             </button>
           </h2>
@@ -666,10 +773,10 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item" style="background-color:#def2f1">
+        <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingFour">
-            <button class="accordion-button collapsed" style="background-color:#3aafa9" type="button"
-              data-bs-toggle="collapse" data-bs-target="#smooth-collapse">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#smooth-collapse">
               Smoothness properties
             </button>
           </h2>
@@ -733,42 +840,50 @@
         </ol>
         <h2 class="mb-3">Conference Papers</h2>
         <ol reversed>
-          <li class="mb-2">X. Tan, <b>P. Ong</b>, P. Tabuada, and A. D. Ames. <a href="https://arxiv.org/abs/2505.06842">&ldquo;Secure safety filter
+          <li class="mb-2">X. Tan, <b>P. Ong</b>, P. Tabuada, and A. D. Ames. <a
+              href="https://arxiv.org/abs/2505.06842">&ldquo;Secure safety filter
               design for sampled-data nonlinear systems under sensor spoofing attacks&rdquo;</a> <br /> Proceedings of
             the <i>IEEE Conference on Decision and Control</i>, Rio De Janeiro, Brazil, December 2025. To Appear.
             <br />
           </li>
-          <li class="mb-2"><b>P. Ong</b>, M. H. Cohen, T. G. Molnar, and A. D. Ames. <a href="https://arxiv.org/abs/2507.12717">&ldquo;On the properties
+          <li class="mb-2"><b>P. Ong</b>, M. H. Cohen, T. G. Molnar, and A. D. Ames. <a
+              href="https://arxiv.org/abs/2507.12717">&ldquo;On the properties
               of optimal-decay control barrier functions&rdquo;</a> <br /> Proceedings of the <i>IEEE Conference on
               Decision and Control</i>, Rio De Janeiro, Brazil, December 2025. To Appear.
-              <br />
-            </li>
+            <br />
+          </li>
           <li class="mb-2">X. Tan, J. Sundar, R. Bruzzone, <b>P. Ong</b>, W. T. Lunardi, M. Andreoni, P. Tabuada, and A.
-            D. Ames. <a href="https://arxiv.org/abs/2505.06845">&ldquo;Secure safety filter: Towards safe flight control under sensor attacks&rdquo;</a>
-            <br /> Proceedings of the <i>IEEE/RSJ International Conference on Intelligent Robots and Systems</i>, Hangzhou,
-              China, October 2025. To Appear.
-              <br />
-            </li>
-          <li class="mb-2">X. Tan, <b>P. Ong</b>, P. Tabuada, and A. D. Ames. <a href="https://arxiv.org/abs/2502.20718">&ldquo;Computationally
+            D. Ames. <a href="https://arxiv.org/abs/2505.06845">&ldquo;Secure safety filter: Towards safe flight control
+              under sensor attacks&rdquo;</a>
+            <br /> Proceedings of the <i>IEEE/RSJ International Conference on Intelligent Robots and Systems</i>,
+            Hangzhou,
+            China, October 2025. To Appear.
+            <br />
+          </li>
+          <li class="mb-2">X. Tan, <b>P. Ong</b>, P. Tabuada, and A. D. Ames. <a
+              href="https://arxiv.org/abs/2502.20718">&ldquo;Computationally
               efficient safe control of linear systems under severe sensor attacks&rdquo;</a> <br /> Proceedings of the
             <i>American Control Conference</i>, Denver, Colorado, July 2024. To Appear.
             <br />
           </li>
-          <li class="mb-2"><b>P. Ong</b>, M. H. Cohen, T. G. Molnar, and A. D. Ames. <a href="https://arxiv.org/abs/2412.03708">&ldquo;Rectified control
+          <li class="mb-2"><b>P. Ong</b>, M. H. Cohen, T. G. Molnar, and A. D. Ames. <a
+              href="https://arxiv.org/abs/2412.03708">&ldquo;Rectified control
               barrier functions for high-order safety constraints&rdquo;</a> <br /> Proceedings of the <i>American
-              Control Conference</i>, Denver, Colorado, July 2025. 
-              <br />
-            </li>
-          <li class="mb-2"><b>P. Ong</b>, M. Mazo Jr., and A. D. Ames. <a href="https://arxiv.org/abs/2409.09812">&ldquo;Hierarchical event-triggered
+              Control Conference</i>, Denver, Colorado, July 2025.
+            <br />
+          </li>
+          <li class="mb-2"><b>P. Ong</b>, M. Mazo Jr., and A. D. Ames. <a
+              href="https://arxiv.org/abs/2409.09812">&ldquo;Hierarchical event-triggered
               systems: Safe learning of quasi-optimal deadline policies&rdquo;</a> <br /> Proceedings of the <i>IEEE
-              Conference on Decision and Control</i>, Milan, Italy, December 2024, pp. 4455-4461. 
-              <br />
-            </li>
-          <li class="mb-2">X. Tan, <b>P. Ong</b>, P. Tabuada, and A. D. Ames. <a href="https://arxiv.org/abs/2409.08413">&ldquo;Safety of linear systems
+              Conference on Decision and Control</i>, Milan, Italy, December 2024, pp. 4455-4461.
+            <br />
+          </li>
+          <li class="mb-2">X. Tan, <b>P. Ong</b>, P. Tabuada, and A. D. Ames. <a
+              href="https://arxiv.org/abs/2409.08413">&ldquo;Safety of linear systems
               under severe sensor attacks&rdquo;</a> <br /> Proceedings of the <i>IEEE Conference on Decision and
-              Control</i>, Milan, Italy, December 2024, pp. 336-342. 
-              <br />
-            </li>
+              Control</i>, Milan, Italy, December 2024, pp. 336-342.
+            <br />
+          </li>
           <li class="mb-2">G. Bahati, <b>P. Ong</b>, A. D. Ames. <a
               href="https://arxiv.org/abs/2304.08685">&ldquo;Sample-and-hold safety with control barrier
               functions&rdquo;</a> <br />
