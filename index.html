@@ -156,13 +156,29 @@
   <section class="p-5" id="news" style="background-color:#b5f3f0">
     <div class="container">
       <h1 class="text-center mb-4">News</h1>
-      <p class="text-center text-muted">Last updated: July 2025</p>
+      <p class="text-center text-muted">Last updated: August 2025</p>
       <!-- Recent News-->
       <div id="news-visible" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       </div>
 
       <!-- News Cards -->
       <div id="news-archive" class="d-none">
+        <div class="col">
+          <div class="card h-100 bg-submitted text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-journal-arrow-down mb-3"></i>
+              </div>
+              <h3 class="card-title mb-4">Papers Submitted</h3>
+              <p class="card-text"> We have submitted a new manuscript titled <em>"Matrix Control Barrier Functions"</em> to the IEEE Transactions on Automatic Control. This paper introduces a novel generalization of the control barrier function framework based on matrix inequalities.
+              </p>
+              <a href="https://arxiv.org/abs/2508.11795" class="btn btn-light">See Paper</a>
+              <a href="https://youtu.be/CuSsAjOmPik" class="btn btn-light">See Experiment Video</a>
+            </div>
+            <div class="card-footer">August 2025</div>
+          </div>
+        </div>
+
         <div class="col">
           <div class="card h-100 bg-conf-accepted text-light">
             <div class="card-body text-center">
@@ -816,6 +832,10 @@
       <div>
         <h2 class="mb-3">Journal Papers</h2>
         <ol reversed>
+          <li class="mb-2"> <b>P. Ong</b>, Y. Xu, R. M. Bena, F. Jabbari, and A. D. Ames. <a
+              href="https://arxiv.org/abs/2508.11795"> Matrix Control Barrier Functions </a> <br /> <i>IEEE Transactions on Automatic Control</i>,
+            submitted.
+            <br />
           <li class="mb-2"> <b>P. Ong</b>, M. H. Cohen, T. G. Molnar, and A. D. Ames. <a
               href="https://arxiv.org/abs/2412.03708"> Rectified control
               barrier functions for high-order safety constraints </a> <br /> <i>IEEE Control Systems Letters</i>,
