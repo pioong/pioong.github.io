@@ -159,7 +159,7 @@
   <section class="p-5" id="news" style="background-color:#b5f3f0">
     <div class="container">
       <h1 class="text-center mb-4">News</h1>
-      <p class="text-center text-muted">Last updated: September 2025</p>
+      <p class="text-center text-muted">Last updated: December 2025</p>
       <!-- Recent News-->
       <div id="news-visible" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
       </div>
@@ -167,14 +167,34 @@
       <!-- News Cards -->
       <div id="news-archive" class="d-none">
         <div class="col">
+          <div class="card h-100 bg-submitted text-light">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-journal-arrow-down mb-3"></i>
+              </div>
+              <h3 class="card-title mb-4">Paper Submitted</h3>
+              <p class="card-text">
+                We have submitted a new manuscript titled <em>"Explicit Control Barrier Function-based Safety Filters
+                 and their Resource-Aware Computation"</em> to the <em>IFAC World Congress 2026</em>. This work studies
+                the explicit formulation of CBF-QPs and investigates conditions under which the control input can be
+                obtained without solving an optimization problem.
+              </p>
+              <a href="https://arxiv.org/abs/2512.10118" class="btn btn-light">See Paper</a>
+            </div>
+            <div class="card-footer">December 2025</div>
+          </div>
+        </div>
+
+        <div class="col">
           <div class="card h-100 bg-journal-accepted">
             <div class="card-body text-center">
               <div class="h1 mb-3">
                 <img src="images/csl.png" alt="csl cover" style="height:64px; max-width:100%; object-fit: contain;">
               </div>
               <h3 class="card-title mb-4">Journal Paper Accepted</h3>
-              <p class="card-text"> Our paper &ldquo;Combinatorial Control Barrier Functions: Nested Boolean and 
-                 p-choose-r Compositions of Safety Constraints&rdquo; is accepted for publication in the IEEE Control System Letters. </p>
+              <p class="card-text"> Our paper &ldquo;Combinatorial Control Barrier Functions: Nested Boolean and
+                p-choose-r Compositions of Safety Constraints&rdquo; is accepted for publication in the IEEE Control
+                System Letters. </p>
               <a href="https://arxiv.org/abs/2509.10716" class="btn btn-dark">See Paper</a>
               <a href="https://github.com/joonlee16/combinatorial_cbf" class="btn btn-dark">Git Repo</a>
             </div>
@@ -190,13 +210,14 @@
               </div>
               <h3 class="card-title mb-4">Papers Submitted</h3>
               <p class="card-text">
-                We have submitted two papers to the American Control Conference (ACC 2026). Stay tuned as links to the papers will be shared here once they are uploaded.
+                We have submitted two papers to the American Control Conference (ACC 2026). Stay tuned as links to the
+                papers will be shared here once they are uploaded.
               </p>
               <a href="https://arxiv.org/abs/2510.20202" class="btn btn-light">See Paper 1</a>
             </div>
             <div class="card-footer">September 2025</div>
           </div>
-        </div>  
+        </div>
 
         <div class="col">
           <div class="card h-100 bg-submitted text-light">
@@ -206,8 +227,9 @@
               </div>
               <h3 class="card-title mb-4">Paper Submitted</h3>
               <p class="card-text">
-                We have submitted a new manuscript titled <em>"Combinatorial Control Barrier Functions: Nested Boolean and 
-                 p-choose-r Compositions of Safety Constraints"</em> to the IEEE Control Systems Letters (L-CSS).
+                We have submitted a new manuscript titled <em>"Combinatorial Control Barrier Functions: Nested Boolean
+                  and
+                  p-choose-r Compositions of Safety Constraints"</em> to the IEEE Control Systems Letters (L-CSS).
                 This paper develops a novel CBF framework for addressing complex logical compositions of CBFs.
               </p>
               <a href="https://arxiv.org/abs/2509.10716" class="btn btn-light">See Paper</a>
@@ -224,7 +246,9 @@
                 <i class="bi bi-journal-arrow-down mb-3"></i>
               </div>
               <h3 class="card-title mb-4">Paper Submitted</h3>
-              <p class="card-text"> We have submitted a new manuscript titled <em>"Matrix Control Barrier Functions"</em> to the IEEE Transactions on Automatic Control. This paper introduces a novel generalization of the control barrier function framework based on matrix inequalities.
+              <p class="card-text"> We have submitted a new manuscript titled <em>"Matrix Control Barrier
+                  Functions"</em> to the IEEE Transactions on Automatic Control. This paper introduces a novel
+                generalization of the control barrier function framework based on matrix inequalities.
               </p>
               <a href="https://arxiv.org/abs/2508.11795" class="btn btn-light">See Paper</a>
               <a href="https://youtu.be/CuSsAjOmPik" class="btn btn-light">See Experiment Video</a>
@@ -792,9 +816,8 @@
                 <p>Event-triggered control (ETC) is a tool for accomplishing control tasks while conserving resources.
                   Our research involves pushing the boundary on the efficiency of ETC, and at the same time, tying in
                   performance criteria to the trigger design. In addition, we tackle unsolved problems in the area, such
-                  as Zeno-free distributed trigger design, and interesting applications of ETC, such as satellite
-                  control and human-robot
-                  interaction.</p>
+                  as Zeno-free distributed trigger design, and interesting applications of ETC beyond event-triggered communication, such as reducing actuation in satellite
+                  station keeping, reducing computation in solving CBF-QPs, and reducing interaction in human-supervised multi-objective optimization.</p>
               </div>
             </div>
           </div>
@@ -880,36 +903,41 @@
   </section>
 
   <section class="p-5 bg-dark text-light" id="demonstrations">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="text-warning">Demonstrations</h2>
-      <p class="lead">Selected videos and simulations showcasing our recent research contributions.</p>
-    </div>
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="text-warning">Demonstrations</h2>
+        <p class="lead">Selected videos and simulations showcasing our recent research contributions.</p>
+      </div>
 
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card bg-secondary text-light h-100">
-          <div class="card-body text-center">
-            <h5 class="card-title">Matrix CBF: Multi-Agent Connectivity Maintenance</h5>
-            <div class="ratio ratio-16x9 mb-3">
-              <iframe src="https://www.youtube.com/embed/CuSsAjOmPik" title="Matrix CBF Video" allowfullscreen></iframe>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card bg-secondary text-light h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Matrix CBF: Multi-Agent Connectivity Maintenance</h5>
+              <div class="ratio ratio-16x9 mb-3">
+                <iframe src="https://www.youtube.com/embed/CuSsAjOmPik" title="Matrix CBF Video"
+                  allowfullscreen></iframe>
+              </div>
+              <p class="card-text">Demonstration of matrix control barrier functions for connectivity maintenance and
+                collision avoidance in a multi-drone system.</p>
             </div>
-            <p class="card-text">Demonstration of matrix control barrier functions for connectivity maintenance and collision avoidance in a multi-drone system.</p>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="card bg-secondary text-light h-100">
-          <div class="card-body text-center">
-            <h5 class="card-title">Combinatorial CBFs: Safety via <em>p</em>-choose-<em>r</em> Constraints</h5>
-            <img src="images/combinatorial_cbf.gif" alt="Combinatorial CBF demo" class="img-fluid rounded mb-3" style="max-height: 300px; object-fit: contain;">
-            <p class="card-text">Simulation showing nested and <em>p</em>-choose-<em>r</em> compositions of CBFs in action. In this example, four agents are required in each region at all time. The combinatorial CBF prevents agents from leaving the region to maintain this requirement.</p>
+        <div class="col-md-6">
+          <div class="card bg-secondary text-light h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Combinatorial CBFs: Safety via <em>p</em>-choose-<em>r</em> Constraints</h5>
+              <img src="images/combinatorial_cbf.gif" alt="Combinatorial CBF demo" class="img-fluid rounded mb-3"
+                style="max-height: 300px; object-fit: contain;">
+              <p class="card-text">Simulation showing nested and <em>p</em>-choose-<em>r</em> compositions of CBFs in
+                action. In this example, four agents are required in each region at all time. The combinatorial CBF
+                prevents agents from leaving the region to maintain this requirement.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
   </section>
 
   <!-- Publications -->
@@ -920,11 +948,13 @@
         <h2 class="mb-3">Journal Papers</h2>
         <ol reversed>
           <li class="mb-2"> <b>P. Ong</b>, H. Lee, T. G. Molnar, D. Panagou, A. D. Ames. <a
-              href="https://arxiv.org/abs/2509.10716"> Combinatorial control barrier functions: Nested Boolean and p-choose-r compositions of safety constraints </a> <br /> <i>IEEE Control Systems Letters</i>,
-            To appear.
+              href="https://arxiv.org/abs/2509.10716"> Combinatorial control barrier functions: Nested Boolean and
+              p-choose-r compositions of safety constraints </a> <br /> <i>IEEE Control Systems Letters</i> 9:2705-2710,
+            2025.
             <br />
-          <li class="mb-2"> <b>P. Ong</b>, Y. Xu, R. M. Bena, F. Jabbari,  A. D. Ames. <a
-              href="https://arxiv.org/abs/2508.11795"> Matrix Control Barrier Functions </a> <br /> <i>IEEE Transactions on Automatic Control</i>,
+          <li class="mb-2"> <b>P. Ong</b>, Y. Xu, R. M. Bena, F. Jabbari, A. D. Ames. <a
+              href="https://arxiv.org/abs/2508.11795"> Matrix Control Barrier Functions </a> <br /> <i>IEEE Transactions
+              on Automatic Control</i>,
             Submitted.
             <br />
           <li class="mb-2"> <b>P. Ong</b>, M. H. Cohen, T. G. Molnar, A. D. Ames. <a
@@ -944,42 +974,49 @@
           <li class="mb-2"> <b>P. Ong</b>, B. Capelli, L. Sabattini, J. Cortés. <a
               href="http://terrano.ucsd.edu/jorge/publications/jp/jp154.html">Nonsmooth control barrier function design
               of continuous constraints for network connectivity maintenance</a> <br /> <i>Automatica</i>, 156:111209,
-            2023
+            2023.
             <br />
           </li>
           <li class="mb-2">A. J. Taylor, <b>P. Ong</b>, J. Cortés, A. D. Ames. <a
               href="http://terrano.ucsd.edu/jorge/publications/jp/jp133.html">Safety-critical event triggered control
               via input-to-state safe barrier functions</a> <br /> <i>IEEE Control Systems Letters</i> 5(3):749-754,
-            2021
+            2021.
             <br /> (First two authors contributed equally to the paper) <br />
           </li>
           <li class="mb-2"><b>P. Ong</b> and J. Cortés. <a
               href="http://terrano.ucsd.edu/jorge/publications/jp/jp124.html">Opportunistic robot control for
               interactive multiobjective optimization under human performance limitations</a> <br /> <i>Automatica</i>
-            123:109253, 2021 <br />
+            123:109253, 2021. <br />
           </li>
         </ol>
         <h2 class="mb-3">Conference Papers</h2>
         <ol reversed>
-          <li class="mb-2"> M. H. Cohen, <b>P. Ong</b>, A. D. Ames. <a
-              href=""> &ldquo;Input-to-State Safe Backstepping: Robust Safety-Critical Control with Unmatched Uncertainties&rdquo; </a> <br /> Proceedings of the
+          <li class="mb-2">P. Mestres, S. S. Mousavi, <b>P. Ong</b>, L. Yang, E. Das, J. W. Burdick,
+            A. D. Ames <a href="https://arxiv.org/abs/2512.10118"> &ldquo;Explicit Control Barrier Function-based Safety
+              Filters and their Resource-Aware Computation&rdquo; </a> <br /> Proceedings of the
+            <i>IFAC World Congress</i>, Busan, South Korea, August 2026, Submitted.
+            <br />
+          <li class="mb-2"> M. H. Cohen, <b>P. Ong</b>, A. D. Ames. <a href=""> &ldquo;Input-to-State Safe Backstepping:
+              Robust Safety-Critical Control with Unmatched Uncertainties&rdquo; </a> <br /> Proceedings of the
             <i>American Control Conference</i>, New Orleans, LA, May 2026, Submitted.
             <br />
-          <li class="mb-2"> M. de Sa, <b>P. Ong</b>, A. D. Ames. <a
-              href="https://arxiv.org/abs/2510.20202"> &ldquo;From Bundles to Backstepping: Geometric Control Barrier Functions for Safety-Critical Control on Manifolds&rdquo; </a> <br /> Proceedings of the
+          <li class="mb-2"> M. de Sa, <b>P. Ong</b>, A. D. Ames. <a href="https://arxiv.org/abs/2510.20202"> &ldquo;From
+              Bundles to Backstepping: Geometric Control Barrier Functions for Safety-Critical Control on
+              Manifolds&rdquo; </a> <br /> Proceedings of the
             <i>American Control Conference</i>, New Orleans, LA, May 2026, Submitted.
             <br />
           <li class="mb-2"> <b>P. Ong</b>, H. Lee, T. G. Molnar, D. Panagou, A. D. Ames. <a
-              href="https://arxiv.org/abs/2509.10716"> &ldquo;Combinatorial control barrier functions: Nested Boolean and p-choose-r compositions of safety constraints&rdquo; </a> <br /> Proceedings of the
+              href="https://arxiv.org/abs/2509.10716"> &ldquo;Combinatorial control barrier functions: Nested Boolean
+              and p-choose-r compositions of safety constraints&rdquo; </a> <br /> Proceedings of the
             <i>American Control Conference</i>, New Orleans, LA, May 2026, Submitted.
             <br />
-          <li class="mb-2">X. Tan, <b>P. Ong</b>, P. Tabuada,  A. D. Ames. <a
+          <li class="mb-2">X. Tan, <b>P. Ong</b>, P. Tabuada, A. D. Ames. <a
               href="https://arxiv.org/abs/2505.06842">&ldquo;Secure safety filter
               design for sampled-data nonlinear systems under sensor spoofing attacks&rdquo;</a> <br /> Proceedings of
             the <i>IEEE Conference on Decision and Control</i>, Rio De Janeiro, Brazil, December 2025. To Appear.
             <br />
           </li>
-          <li class="mb-2"><b>P. Ong</b>, M. H. Cohen, T. G. Molnar,  A. D. Ames. <a
+          <li class="mb-2"><b>P. Ong</b>, M. H. Cohen, T. G. Molnar, A. D. Ames. <a
               href="https://arxiv.org/abs/2507.12717">&ldquo;On the properties
               of optimal-decay control barrier functions&rdquo;</a> <br /> Proceedings of the <i>IEEE Conference on
               Decision and Control</i>, Rio De Janeiro, Brazil, December 2025. To Appear.
@@ -996,7 +1033,7 @@
           <li class="mb-2">X. Tan, <b>P. Ong</b>, P. Tabuada, A. D. Ames. <a
               href="https://arxiv.org/abs/2502.20718">&ldquo;Computationally
               efficient safe control of linear systems under severe sensor attacks&rdquo;</a> <br /> Proceedings of the
-            <i>American Control Conference</i>, Denver, Colorado, July 2024. To Appear.
+            <i>American Control Conference</i>, Denver, Colorado, July 2025. pp. 4383-4390.
             <br />
           </li>
           <li class="mb-2"><b>P. Ong</b>, M. H. Cohen, T. G. Molnar, A. D. Ames. <a
